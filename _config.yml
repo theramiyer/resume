@@ -3,9 +3,12 @@ language: 'en-in'
 timezone: Asia/Kolkata
 
 title: Ram Iyer’s Résumé
-name: Ramakrishnan Iyer
+description: Ram Iyer’s Résumé
+
+name: Ramakrishnan R. Iyer
 email: ram.iyer@outlook.com
-description:
+phone: "+918861065751"
+address: "513, 19<sup>th</sup> Cross, Purnapragna Layout, Bangalore, KA 560061"
 
 baseurl: /
 url: "//resume.ramiyer.me" # the base hostname & protocol for your site
