@@ -1,7 +1,7 @@
 <!-- h3 Section headings, implemented by categories -->
 {% for category in site.categories %} <!-- Category loop -->
   <div class="twelve columns">
-    <h4>{{ category[0] }}</h4>
+    <h4>{{ category[0] | capitalize }}</h4>
   </div>
   {% for post in category[1] %}
     <!--h4 Institution name implemented by post title-->
