@@ -9,6 +9,10 @@
     <div class="container">
       <div class="row">
           {{ content }}
+          <footer class="site-footer clearfix">
+            <section class="copyright">&copy; {{  site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.name }}</a></section>
+            <section class="poweredby">Proudly published by <a href="https://github.com/theramiyer">Ram Iyer</a> with &hearts; and <a href="https://jekyllrb.com/">Jekyll</a></section>
+          </footer>
       </div>
     </div>
 
