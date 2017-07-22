@@ -24,7 +24,7 @@ siteDraftsDir: "_drafts/"
 sitePostsDir: "_posts/"
 # directory to images from siteLocalDir
 # e.g. to use the current filename directory, can use {directory}
-siteImagesDir: "assets/postimages/"
+siteImagesDir: ""
 
 # URLs to tags/posts/categories JSON files
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
@@ -161,4 +161,4 @@ tableExtraPipes: false
 # template variables is a key-value map used in template string
 # e.g. you can have `posts/{author}/{year}` in newPostFileName after you set author.
 templateVariables:
-  author: "Your Name"
+  author: "Ram Iyer"
