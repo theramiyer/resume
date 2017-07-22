@@ -21,3 +21,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   syntax_highlighter: rouge
   input: GFM
+
+# Permalinks
+permalink: /:categories/:title
