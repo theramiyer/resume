@@ -9,3 +9,5 @@ category: education
 - Point number one
 - Point number two
 - Point number three
+
+<!--more-->
