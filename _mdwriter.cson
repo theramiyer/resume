@@ -48,10 +48,10 @@ frontMatter: """
 ---
 layout: "{layout}"
 title: "{title}"
-subtitle: ""
 date: "{date}"
-tenure:
-category:
+tenure: ""
+category: ""
+subtitle: ""
 ---
 """
 
