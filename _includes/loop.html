@@ -1,0 +1,26 @@
+<!-- h3 Section headings, implemented by categories -->
+{% for category in site.categories %} <!-- Category loop -->
+  <div class="twelve columns">
+    <h4>{{ category[0] }}</h4>
+  </div>
+  {% for post in category[1] %}
+    <!--h4 Institution name implemented by post title-->
+    <div class="twelve columns">
+      <div class="nine columns">
+        <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+      </div>
+      <div class="three columns" align="right">
+        <h5>{{ post.tenure }}</h5>
+      </div>
+      <!--Designation or degree custom post implementation-->
+      <h6>{{ post.subtitle }}</h6>
+      {% if post.content contains '<!--more-->' %}
+        {{ post.content | split:'<!--more-->' | first }}
+      {% else %}
+        <p>
+          There was no "more" tag in the post. Add one to see the content here.
+        </p>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endfor %}
