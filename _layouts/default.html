@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.language }}">
 
   {% include head.html %}
 
@@ -9,9 +9,15 @@
     <div class="container">
       <div class="row">
           {{ content }}
-          <footer class="site-footer clearfix">
-            <section class="copyright">&copy; {{  site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.name }}</a></section>
-            <section class="poweredby">Proudly published by <a href="https://github.com/theramiyer">Ram Iyer</a> with &hearts; and <a href="https://jekyllrb.com/">Jekyll</a></section>
+          <footer class="site-footer">
+            <div class="twelve column">
+              <div class="one-half column">
+                &copy; {{  site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.name }}</a>
+              </div>
+              <div class="one-half column" align="right">
+                Proudly published by <a href="https://github.com/theramiyer">Ram Iyer</a> with &hearts; and <a href="https://jekyllrb.com/">Jekyll</a>
+              </div>
+            </div>
           </footer>
       </div>
     </div>
