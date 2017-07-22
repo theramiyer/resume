@@ -458,10 +458,7 @@ there.
 
 /* Custom CSS */
 .site-footer {
-    position: relative;
-    margin: 8rem 0 0 0;
     font-size: 1rem;
-    line-height: 1.75em;
     color: #777;
 }
 
@@ -472,20 +469,5 @@ there.
 }
 
 .site-footer a:hover {
-    border-bottom: #777 1px solid;
-}
-
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
-    margin-bottom: 2rem;
-}
-
-.copyright {
-    display: block;
-    width: 45%;
-    float: left;
-    margin-bottom: 2rem;
+    text-decoration: underline;
 }
