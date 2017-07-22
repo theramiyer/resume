@@ -14,13 +14,28 @@ class: 'post-template'
 <header>
 </header>
 
-<main class="content" role="main">
-  <article class="{{ page.subclass }}">
-      <header class="post-header">
-          <h1 class="post-title">{{ page.title }}</h1>
-          {% if page.subtitle %}
-            <h3>{{ page.subtitle }}</h3>
-          {% endif %}
+<main>
+  <article>
+      <header>
+        <div class="twelve columns" style="margin-top: 20%;">
+          <div class="nine columns">
+            <h4>{{ page.category }}</h4>
+          </div>
+          <div class="three columns" align="right">
+            <h4><a href="\">back</a></h4>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <div class="nine columns">
+            <h5>{{ page.title }}</h5>
+          </div>
+          <div class="three columns" align="right">
+            <h5>{{ page.tenure }}</h5>
+          </div>
+        </div>
+        {% if page.subtitle %}
+          <h6>{{ page.subtitle }}</h6>
+        {% endif %}
       </header>
 
       <section class="post-content">
