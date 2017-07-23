@@ -24,4 +24,4 @@ kramdown:
   input: GFM
 
 # Permalinks
-permalink: /:categories/:title
+permalink: /:categories/:year/:title
