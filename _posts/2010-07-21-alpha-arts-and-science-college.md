@@ -7,10 +7,9 @@ tenure: "2007 – 10"
 category: education
 ---
 
-- First point
-- Second point
-- Third point
-
+- University of Madras rank-holder in Major (13<sup>th</sup>).
+- Recognised as the Best Outgoing Student (2007 -- ’10).
+- Served as the President of the Students' Forum.
 <!--more-->
-
-Some stuff after the more tag.
+- Served as the Editor of the yearly departmental magazine.
+- Participated and won awards in several state- and national-level intercollegiate competitions.

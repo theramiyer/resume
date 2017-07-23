@@ -7,8 +7,6 @@ tenure: "2013 – 2017"
 category: education
 ---
 
-- Point number one
-- Point number two
-- Point number three
-
-<!--more-->
+- Studied through the Work-integrated Learning Programme (8-semester).
+- Created a Windows Forms- and PowerShell-based GUI tool for management of Windows computers for dissertation.
+- Studied Cloud Computing and Infrastructure as a Code as part of the curriculum.

@@ -1,12 +1,11 @@
 ---
 layout: "post"
 title: "Cognizant Technology Solutions"
-date: "2010-08-21"
-tenure: "2010 – 2011"
+date: "2011-07-21"
+tenure: "2011 – 2012"
 category: "experience"
-subtitle: "Graduate Trainee (ITIS)"
+subtitle: "Systems Executive (ITIS)"
 ---
 
-- Point one
-- Point two
-- Point three
+- Recognised as the Associate of the Quarter (Q2, 2011).
+- Promoted to the next grade in nine months on the basis of performance.
