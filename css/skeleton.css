@@ -122,7 +122,7 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 1.9em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 2.2;
+  line-height: 1.6;
   font-weight: 400;
   font-family: "Alegreya", "Times New Roman", Times, serif;
   color: #222; }
