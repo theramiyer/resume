@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Alpha Arts and Science College"
-subtitle: "B.Sc. in Electronics and Communications"
+subtitle: "B.Sc. (Electronics and Communications)"
 date: "2010-07-21"
 tenure: "2007–10"
 category: education
