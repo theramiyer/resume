@@ -16,6 +16,8 @@
       <h6>{{ post.subtitle }}</h6>
       {% if post.content contains '<!--more-->' %}
         {{ post.content | split:'<!--more-->' | first }}
+      {% elsif post.content contains '</ul>' %}
+        {{ post.content | split:'</ul>' | first }}</ul>
       {% else %}
         <p>
           There was no "more" tag in the post. Add one to see the content here.
