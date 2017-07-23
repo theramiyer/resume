@@ -4,9 +4,9 @@ title: "Published author"
 date: "2016-01-24"
 tenure: "2016 – present"
 category: "extracurricular"
-subtitle: "The Damp Roman Candle"
+subtitle: "Fiction and non-fiction books"
 ---
 
-- Point 1
-- Point 2
-- Point 2
+- Published author of a literary fiction novelette, _The Damp Roman Candle_
+- Wrote a book on the reality of Multi-level Marketing, _Pyramid on My Ceiling_
+- Working on the publication of a fiction novel, _The Restrained Fireball_
