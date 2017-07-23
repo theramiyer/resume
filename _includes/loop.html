@@ -20,9 +20,7 @@
       {% elsif post.content contains '</ul>' %}
         {{ post.content | split:'</ul>' | first }}</ul>
       {% else %}
-        <p>
-          There was no "more" tag in the post. Add one to see the content here.
-        </p>
+        {{ post.content | split:'</p>' | first }}</p>
       {% endif %}
     </div>
   {% endfor %}
