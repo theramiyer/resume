@@ -10,42 +10,37 @@ class: 'post-template'
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
-
 <header>
+  <div class="twelve columns" style="margin-top: 20%;">
+    <h4>{{ page.category | capitalize }}</h4>
+  </div>
+  <div class="twelve columns">
+    <div class="nine columns">
+      <h5>{{ page.title }}</h5>
+    </div>
+    <div class="three columns">
+      <div class="u-pull-right">
+        <h5>{{ page.tenure }}</h5>
+      </div>
+    </div>
+    {% if page.subtitle %}
+    <h6>{{ page.subtitle }}</h6>
+    {% endif %}
+  </div>
 </header>
 
-<main>
-  <article>
-      <header>
-        <div class="twelve columns" style="margin-top: 20%;">
-          <h4>{{ page.category | capitalize }}</h4>
-        </div>
-        <div class="twelve columns">
-          <div class="nine columns">
-            <h5>{{ page.title }}</h5>
-          </div>
-          <div class="three columns">
-            <div class="u-pull-right">
-              <h5>{{ page.tenure }}</h5>
-            </div>
-          </div>
-        </div>
-        {% if page.subtitle %}
-          <h6>{{ page.subtitle }}</h6>
-        {% endif %}
-      </header>
+<article>
+  <div class="twelve columns">
+    {{ content }}
+  </div>
+</article>
 
-      <section class="post-content">
-        <div class="twelve columns">
-          {{ content }}
-        </div>
-        <div class="offset-by-nine columns">
-          <div class="three columns">
-            <h4><a href="\">back</a></h4>
-          </div>
-        </div>
-      </section>
-  </article>
-</main>
+<footer>
+  <div class="twelve columns">
+    <div class="u-pull-right">
+      <h4><a href="/">back</a></h4>
+    </div>
+  </div>
+</footer>
 
 <!-- /post -->
