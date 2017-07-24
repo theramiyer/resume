@@ -10,9 +10,13 @@
       <div class="nine columns">
         <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
       </div>
-      <div class="three columns" align="right">
-        <h5>{{ post.tenure }}</h5>
+      <div class="three columns">
+        <div class="u-pull-right">
+          <h5>{{ post.tenure }}</h5>
+        </div>
       </div>
+    </div>
+    <div class="twelve columns"
       <!--Designation or degree custom post implementation-->
       <h6>{{ post.subtitle }}</h6>
       {% if post.content contains '<!--more-->' %}
