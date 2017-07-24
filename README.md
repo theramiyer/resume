@@ -47,7 +47,7 @@ You may add a `<!--more-->` tag in the middle of an unordered list---that's quit
 - Point one
 - Point two
 - Point three
-`<!--more-->`
+<!--more-->
 - Point four
 - Point five
 ```
