@@ -4,9 +4,9 @@ timezone: Asia/Kolkata
 
 # Your details
 title: Ram Iyer’s Résumé
-description: Ram Iyer’s Résumé
+description: Ram Iyer’s online résumé
 
-name: Ramakrishnan R. Iyer
+name: "Ramakrishnan R. Iyer" # Your full name here
 email: "&#114;&#097;&#109;&#046;&#105;&#121;&#101;&#114;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#105;&#110;" # Encoded to prevent spam
 phone: "+918861065751"
 address: "513, 19<sup>th</sup> Cross, Purnapragna Layout, Bangalore, KA 560061"
