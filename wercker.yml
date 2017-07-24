@@ -23,5 +23,5 @@ build:
     steps:
         - bundle-install
         - script:
-            name: rspec
-            code: bundle exec rspec
+            name: jekyll
+            code: bundle exec jekyll build
