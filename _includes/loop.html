@@ -2,7 +2,7 @@
 {% assign sortedcategories = site.categories | sort %}
 {% for category in sortedcategories %} <!-- Category loop -->
   <div class="twelve columns">
-    <h4>{{ category[0] | capitalize }}</h4>
+    <h4 id="{{ category[0] | slugify }}"><a href="#{{ category[0] | slugify }}">{{ category[0] | capitalize }}</a></h4>
   </div>
   {% for post in category[1] %}
     <!--h4 Institution name implemented by post title-->
