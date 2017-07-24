@@ -1,4 +1,4 @@
-# Résumé
+# Skeleton Résumé
 
 A simple, elegant online résumé created using an [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll), an implementation of Dave Gamache's Skeleton framework in Jekyll. The original Skeleton framework and docs are available from http://getskeleton.com/.
 
@@ -64,3 +64,5 @@ All parts of the résumé site code are free to use and abuse under the [open-so
 Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.
 
 Skeleton-framework-Jekyll was created by [Bradford Lynch](https://twitter.com/blynch41) for better Skeleton and Jekyll harmony.
+
+Skeleton Resume was created by [Ram Iyer](https://github.com/theramiyer) to enable everyone to have a minimalistic online résumé based on Skeleton, built by Jekyll.
