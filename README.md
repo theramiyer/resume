@@ -10,7 +10,7 @@ First things first: modify the data in `config.yml` to make the site your own (a
 
 ### Structure
 
-All your data should go to `_posts`; each entry in the résumé is a post. [Markdown Writer](https://atom.io/packages/markdown-writer) would help you a lot with this (markdown-writer config is included).
+All your data should go to `_posts`; each entry in the résumé is a post. [Markdown Writer](https://atom.io/packages/markdown-writer) would help you a lot with this (Markdown Writer config is included).
 
 Ensure that each of your posts has the following frontmatter:
 
