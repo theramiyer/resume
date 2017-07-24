@@ -43,7 +43,7 @@ The summary is decided based on the following (in this order):
 
 You may add a `<!--more-->` tag in the middle of an unordered list---that's quite acceptable. In this case, the summary would be truncated at the appearance of the `<!--more-->`. Therefore, if the post is like:
 
-``` GFM
+``` markdown
 - Point one
 - Point two
 - Point three
