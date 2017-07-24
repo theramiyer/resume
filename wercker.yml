@@ -28,4 +28,4 @@ build:
         - bundle-install
         - script:
             name: jekyll
-            code: bundle exec jekyll build
+            code: bundle exec jekyll build --trace
