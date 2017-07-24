@@ -18,19 +18,16 @@ class: 'post-template'
   <article>
       <header>
         <div class="twelve columns" style="margin-top: 20%;">
-          <div class="nine columns">
-            <h4>{{ page.category | capitalize }}</h4>
-          </div>
-          <div class="three columns" align="right">
-            <h4><a href="\">back</a></h4>
-          </div>
+          <h4>{{ page.category | capitalize }}</h4>
         </div>
         <div class="twelve columns">
           <div class="nine columns">
             <h5>{{ page.title }}</h5>
           </div>
-          <div class="three columns" align="right">
-            <h5>{{ page.tenure }}</h5>
+          <div class="three columns">
+            <div class="u-pull-right">
+              <h5>{{ page.tenure }}</h5>
+            </div>
           </div>
         </div>
         {% if page.subtitle %}
@@ -39,7 +36,14 @@ class: 'post-template'
       </header>
 
       <section class="post-content">
-        {{ content }}
+        <div class="twelve columns">
+          {{ content }}
+        </div>
+        <div class="offset-by-nine columns">
+          <div class="three columns">
+            <h4><a href="\">back</a></h4>
+          </div>
+        </div>
       </section>
   </article>
 </main>
