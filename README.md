@@ -14,7 +14,7 @@ All your data should go to `_posts`; each entry in the résumé is a post. [Mark
 
 Ensure that each of your posts has the following frontmatter:
 
-```
+``` YAML
 ---
 layout: "post"
 title: "Name of the institution/organisation"
@@ -43,7 +43,7 @@ The summary is decided based on the following (in this order):
 
 You may add a `<!--more-->` tag in the middle of an unordered list---that's quite acceptable. In this case, the summary would be truncated at the appearance of the `<!--more-->`. Therefore, if the post is like:
 
-```
+``` GFM
 - Point one
 - Point two
 - Point three
