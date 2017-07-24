@@ -21,6 +21,7 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
+        - gem install bundler
         - bundle-install
         - script:
             name: jekyll
