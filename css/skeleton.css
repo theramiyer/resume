@@ -456,6 +456,13 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+/* Smaller than phablet */
+@media (max-width: 550px) {
+  .u-pull-right {
+    float: left;
+  }
+}
+
 
 /* Custom CSS */
 .site-footer {
