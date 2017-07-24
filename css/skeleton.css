@@ -322,7 +322,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style-type: disc;
+  list-style-type: circle;
   margin-left: 1em;
 }
 ol {
