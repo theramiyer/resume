@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<!-- < default -->
+
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+<header>
+  <div class="twelve columns" style="margin-top: 20%;">
+    <h4>{{ page.category | capitalize }}</h4>
+  </div>
+  <div class="twelve columns">
+    <h5>{{ page.title }}</h5>
+    {% if page.subtitle %}
+    <h6>{{ page.subtitle }}</h6>
+    {% endif %}
+  </div>
+</header>
+
+<article>
+  <div class="twelve columns">
+    {{ content }}
+  </div>
+</article>
+
+<footer>
+  <div class="twelve columns">
+    <div class="u-pull-right">
+      <h4><a href="/">back</a></h4>
+    </div>
+  </div>
+</footer>
+
+<!-- /post -->
