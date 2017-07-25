@@ -35,3 +35,4 @@ deploy:
             source-dir: ./_site/
             opts: |
                 --acl-public
+                --add-header="Cache-Control:max-age=3600, public"
