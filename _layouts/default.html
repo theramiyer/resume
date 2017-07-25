@@ -11,6 +11,7 @@
           {{ content }}
           <footer class="site-footer">
             <div class="twelve column">
+                BitBucket hosts the code for this site. Wercker picks up the code upon a push to BitBucket, builds the Jekyll site, and deploys it to Amazon&nbsp;S3. CloudFront is the frontend. Why? Because we can. :)
               <div class="one-third column">
                 <div class="u-pull-left">
                   &copy; {{  site.time | date: '%Y' }} {{ site.name }}
