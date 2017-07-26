@@ -468,6 +468,14 @@ there.
 
 
 /* Custom CSS */
+p a {
+  border-bottom: 1px #222 solid;
+}
+
+p a:hover {
+  border-bottom: 1px #0FA0CE solid;
+}
+
 .site-footer {
     font-size: 1rem;
     color: #777;
