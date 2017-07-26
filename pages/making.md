@@ -18,7 +18,7 @@ As an Infrastructure person, setting up the site on the cloud intrigued me---thi
 5. Amazon's Certificate Manager provides the SSL certificate that encrypts your connection to this site.
 6. WordPress is my DNS provider---I basically bought this domain from them for blogging, but it can be used with AWS.
 
-Now to the detailed picture. (This part has been published as a GitHub Gist as well.)
+Now to the detailed picture. (This part has been published as a [GitHub Gist](https://gist.github.com/theramiyer/d88a00498245a760716ec0c3e3d9230e) as well, for the community.)
 
 ##### Setting up Jekyll
 
