@@ -119,7 +119,7 @@ This is a little tricky part, since we have outdated documentation surrounding i
                 key-secret: $AWS_SECRET_ACCESS_KEY
                 bucket-url: $AWS_BUCKET_URL
                 source-dir: ./_site/
-                opts: --add-header=Cache-Control:max-age=300
+                opts: --add-header=Cache-Control:max-age=3600
     ```
 7. Back in the Wercker screen, you should have a link that says, 'I already have a wercker.yml, trigger a build now.' Go ahead and click that to start the pipeline. Ensure the `build` part completes successfully. The code would not be deployed to S3 just yet.
 8. You should see a tab on the screen, called **Environment**. Click on it.
