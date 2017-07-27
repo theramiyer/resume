@@ -10,7 +10,7 @@ subtitle: "Tech Lead (Cognizant Infrastructure Services)"
 - Recognised as the Associate of the Quarter twice (Q2, 2011; Q4, 2016).
 - Led the automation community at the Sub-Business Unit level.
 - Implemented several PowerShell-based automation projects for the client.
-- [More details]{% post_url 2010-07-21-cognizant-technology-solutions %}.
+- [More details]({% post_url 2010-07-21-cognizant-technology-solutions %}).
 <!--more-->
 
 ### Awards and Recognition
