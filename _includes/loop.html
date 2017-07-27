@@ -3,30 +3,32 @@
 {% for category in sortedcategories %} <!-- Category loop -->
   <div class="twelve columns">
     <!-- Enable deep linking in sections only in loop -->
-    <h4 id="{{ category[0] | slugify }}"><a href="#{{ category[0] | slugify }}">{{ category[0] | capitalize }}</a></h4>
+    <div class="section" id="{{ category[0] | slugify }}"><a href="#{{ category[0] | slugify }}">{{ category[0] | capitalize }}</a></div>
   </div>
   {% for post in category[1] %}
     <!--h4 Institution name implemented by post title-->
     <div class="twelve columns">
       <div class="nine columns">
-        <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+        <a href="{{ post.url }}"><div class="org">{{ post.title }}</div></a>
       </div>
       <div class="three columns">
         <div class="u-pull-right">
-          <h5>{{ post.tenure }}</h5>
+          <div class="org">{{ post.tenure }}</div>
         </div>
       </div>
     </div>
     <div class="twelve columns"
       <!--Designation or degree custom post implementation-->
-      <h6>{{ post.subtitle }}</h6>
-      {% if post.content contains '<!--more-->' %}
+      <div class="role">{{ post.subtitle }}</div>
+      <div class="twelve columns">
+        {% if post.content contains '<!--more-->' %}
         {{ post.content | split:'<!--more-->' | first }}
-      {% elsif post.content contains '</ul>' %}
+        {% elsif post.content contains '</ul>' %}
         {{ post.content | split:'</ul>' | first }}</ul>
-      {% else %}
+        {% else %}
         {{ post.content | split:'</p>' | first }}</p>
-      {% endif %}
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 {% endfor %}

@@ -20,7 +20,7 @@ As an Infrastructure person, setting up the site on the cloud intrigued me---thi
 
 Now to the detailed picture. (This part has been published as a [GitHub Gist](https://gist.github.com/theramiyer/d88a00498245a760716ec0c3e3d9230e) as well, for the community.)
 
-##### Setting up Jekyll
+#### Setting up Jekyll
 
 This document has been created for Windows&nbsp;10 Pro. While this is not entirely necessary, it helps when you need to build the site locally to test out its working.
 
@@ -28,7 +28,7 @@ Enable the [Linux Subsystem on Windows](https://msdn.microsoft.com/en-us/command
 
 While there may be seemingly less-complicated ways to set up Jekyll, setting it up with WSL is much less hassle. [This post](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) by Dave Rupert helps a great deal with it. Also, some of the [Nokogiri binaries](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) need to be installed.
 
-##### Building the site locally
+#### Building the site locally
 
 There are really many ways to do this, the easiest way being to fork one of the existing templates and going forward by simply customising the content.
 
@@ -39,7 +39,7 @@ I wanted to build an uncomplicated site, so I used the [Skeleton](http://getskel
 
 I chose the latter. Sure, I had to still make a few changes to optimise the site, but hey, what's life without adventures?
 
-##### Configuring the Amazon&nbsp;S3 bucket
+#### Configuring the Amazon&nbsp;S3 bucket
 
 Now comes the creation of the Amazon&nbsp;S3 bucket that would host the site contents:
 
@@ -81,7 +81,7 @@ Now comes the creation of the Amazon&nbsp;S3 bucket that would host the site con
 
 That completes the bucket setup part.
 
-##### Setup AWS Access and Secret keys
+#### Setup AWS Access and Secret keys
 
 1. Go to the [IAM console](https://console.aws.amazon.com/iam).
 2. Go to the Users tab and click Add user.
@@ -92,7 +92,7 @@ That completes the bucket setup part.
 7. Click **Create user**.
 8. In the next screen, you'll get the Access key ID and Secret key. Note these down.
 
-##### Configuring Wercker to build and deploy the site to Amazon&nbsp;S3
+#### Configuring Wercker to build and deploy the site to Amazon&nbsp;S3
 
 This is a little tricky part, since we have outdated documentation surrounding on the Internet for now. New users will have a hard time hunting around to get this information. The reason is that Wercker apparently changed the underlying system, by introducing Docker. This has brought in some changes to workflows, which obviously brings in subsequent UI and other changes.
 
@@ -138,7 +138,7 @@ This is a little tricky part, since we have outdated documentation surrounding o
 16. Go ahead and make a push from your local repository after making a small change to the code. Come back to the **Runs** tab on Wercker, and you should see the build happen, immediately followed by deployment.
 17. Once the build and deployment complete, refresh the S3 bucket to see the site contents appear!
 
-##### Configuring CloudFront to deliver the site
+#### Configuring CloudFront to deliver the site
 
 Your site should be live already, and you can access it using the bucket's endpoint URL. To find that URL, you can open your bucket, go to the **Properties** tab, click on **Static website hosting**, and click on the endpoint. However, there are two reasons I chose to go with CloudFront as well.
 
@@ -168,7 +168,7 @@ It's now time to set up CloudFront.
 10. Wait. The process of creating the distribution can take anywhere from ten minutes to a few hours.
 11. Once the **Status** says `Deployed`, and **State** says `Enabled`, the CloudFront distribution would be live. Note the **Domain name** value for the distribution.
 
-##### Configuring DNS routing
+#### Configuring DNS routing
 
 Your site should be accessible using the domain name (like `qdw3xburi4bfy.cloudfront.net`). But we want it to be accessible at `your.bucket.name`. This takes some DNS configuration.
 
@@ -176,6 +176,6 @@ Your site should be accessible using the domain name (like `qdw3xburi4bfy.cloudf
 2. Create a new CNAME record, with `your.bucket.name` in the **Name** field, and `qdw3xburi4bfy.cloudfront.net` in the **Points to** field.
 3. Save the zone file.
 
-##### Conclusion
+#### Conclusion
 
 That brings us to the end of the setup. The site should be all set to be accessed using `https://your.bucket.name`. The browser should show the secure connection indicator as well, with the certificate showing, **Verified by Amazon**.

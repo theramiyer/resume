@@ -12,19 +12,19 @@ class: 'post-template'
 <!-- #post -->
 <header>
   <div class="twelve columns" style="margin-top: 20%;">
-    <h4>{{ page.category | capitalize }}</h4>
+    <div class="section">{{ page.category | capitalize }}</div>
   </div>
   <div class="twelve columns">
     <div class="nine columns">
-      <h5>{{ page.title }}</h5>
+      <div class="org">{{ page.title }}</div>
     </div>
     <div class="three columns">
       <div class="u-pull-right">
-        <h5>{{ page.tenure }}</h5>
+        <div class="org">{{ page.tenure }}</div>
       </div>
     </div>
     {% if page.subtitle %}
-    <h6>{{ page.subtitle }}</h6>
+    <div class="role">{{ page.subtitle }}</div>
     {% endif %}
   </div>
 </header>
@@ -38,7 +38,7 @@ class: 'post-template'
 <footer>
   <div class="twelve columns">
     <div class="u-pull-right">
-      <h4><a href="/">back</a></h4>
+      <div class="section"><a href="/">back</a></div>
     </div>
   </div>
 </footer>
