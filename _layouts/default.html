@@ -10,14 +10,7 @@
       <div class="row">
           {{ content }}
           <footer class="site-footer">
-            <script>
-              jQuery(function ($) {
-                $('h2,h3,h4,h5,h6').filter('[id]').each(function () {
-                $(this).html('<a href="#'+$(this).attr('id')+'">' + $(this).text() + '</a>');
-                });
-              });
-            </script>
-            <div class="twelve column">
+            <div class="twelve columns">
               <div class="one-third column">
                 <div class="u-pull-left">
                   &copy; {{  site.time | date: '%Y' }} {{ site.name }}
@@ -29,6 +22,13 @@
                 </div>
               </div>
             </div>
+            <script>
+            jQuery(function ($) {
+                $('h2,h3,h4,h5,h6').filter('[id]').each(function () {
+                    $(this).html('<a href="#'+$(this).attr('id')+'">' + $(this).text() + '</a>');
+                });
+            });
+            </script>
           </footer>
       </div>
     </div>
