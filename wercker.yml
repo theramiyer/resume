@@ -33,4 +33,6 @@ deploy:
             key-secret: $AWS_SECRET_ACCESS_KEY
             bucket-url: $AWS_BUCKET_URL
             source-dir: ./_site/
-            opts: --acl-public
+            opts: |
+                --acl-public
+                --add-header=Cache-Control:max-age=0
