@@ -314,6 +314,8 @@ code {
   border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
+  overflow: auto;
+  word-wrap: normal;
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
