@@ -7,7 +7,7 @@ subtitle: "Behind the scenes"
 permalink: '/making.html'
 ---
 
-Building this online rÃ©sumÃ© was a personal challenge. I wanted to build my first from-scratch site. While it is not really practical to build pretty much everything from scratch, I picked the [Skeleton](http://getskeleton.com/) boiler plate. Having set up a few blogs using [Jekyll](https://jekyllrb.com/), the static site generator, I was confident using Jekyll. So [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) became the starting point. After spending a couple of hours in setting up the logic to programmatically generate the site from the code, the basic setup was ready.
+Building this online résumé was a personal challenge. I wanted to build my first from-scratch site. While it is not really practical to build pretty much everything from scratch, I picked the [Skeleton](http://getskeleton.com/) boiler plate. Having set up a few blogs using [Jekyll](https://jekyllrb.com/), the static site generator, I was confident using Jekyll. So [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) became the starting point. After spending a couple of hours in setting up the logic to programmatically generate the site from the code, the basic setup was ready.
 
 As an Infrastructure person, setting up the site on the cloud (and not GitHub Pages) intrigued me---this is the first time I'm doing this. Here's a gist of what happens behind the scenes:
 
@@ -121,7 +121,7 @@ This is a little tricky part, since we have outdated documentation surrounding i
                 source-dir: ./_site/
                 opts: --acl-public
     ```
-7. Back in the Wercker screen, you should have a link that says something along the lines of, 'I already have a wercker.yml. Proceed with the build.' Go ahead and click that to start the pipeline. Ensure the `build` part completes successfully. The code would not be deployed to S3 just yet.
+7. Back in the Wercker screen, you should have a link that says, 'I already have a wercker.yml, trigger a build now.' Go ahead and click that to start the pipeline. Ensure the `build` part completes successfully. The code would not be deployed to S3 just yet.
 8. You should see a tab on the screen, called **Environment**. Click on it.
 9. Add the Amazon Access key ID, the Secret key, and the bucket name here. Ensure to make both they keys **protected**. The key names should _exactly_ match the variable names in the `deploy` part of `wercker.yml` (without the leading `$`). Also, note the `s3://` before the bucket name. That's important, too.
     ```
