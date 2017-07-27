@@ -52,27 +52,24 @@ Now comes the creation of the Amazon&nbsp;S3 bucket that would host the site con
 9. Enter the following JSON in the editor area:
 ``` JSON
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "*"
-            },
-            "Action": [
-                "s3:DeleteObject",
-                "s3:GetObject",
-                "s3:GetObjectAcl",
-                "s3:ListBucket",
-                "s3:PutObject",
-                "s3:PutObjectAcl"
-            ],
-            "Resource": [
-                "arn:aws:s3:::[your.bucket.name]",
-                "arn:aws:s3:::[your.bucket.name]/*"
-            ]
-        }
-    ]
+  "Version":"2012-10-17",
+  "Statement":
+  [
+    {
+      "Sid":"PublicReadForGetBucketObjects",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":
+      [
+        "s3:GetObject"
+      ],
+      "Resource":
+      [
+        "arn:aws:s3:::your.bucket.name",
+        "arn:aws:s3:::your.bucket.name/*"
+      ]
+    }
+  ]
 }
 ```
 10. Save the configuration.
@@ -88,9 +85,42 @@ Wercker needs to authenticate itself to push content to the S3 bucket. We'll set
 3. Add a **User name**.
 4. Select the box against **Programmatic access**, and proceed to add permissions.
 5. In the permissions screen, select **Add existing policies directly**.
-6. Search for **AmazonS3FullAccess**, select it, and proceed to review.
-7. Click on **Create user**.
-8. In the next screen, you'll get the **Access key ID** and **Secret key**. Note these down in a safe place.
+6. Click **Create Policy**.
+7. In the next screen, click on Select against **Create Your Own Policy**.
+8. Enter a **Policy Name**, like, `AmazonS3-JekyllResume-ReadWrite`. Enter a description to help you remember what you created the policy for.
+9. In the Policy Document area, enter:
+    ``` JSON
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "ResumeBucketWrite",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:DeleteObject",
+                    "s3:GetObject",
+                    "s3:PutObject"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::your.bucket.name/*"
+                ]
+            },
+            {
+                "Sid": "ResumeBucketList",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:ListBucket"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::your.bucket.name"
+                ]
+            }
+        ]
+    }
+    ```
+10. Search for **AmazonS3-JekyllResume-ReadWrite**, select it, and proceed to review.
+11. Click on **Create user**.
+12. In the next screen, you'll get the **Access key ID** and **Secret key**. Note these down in a safe place.
 
 #### Configuring Wercker to build and deploy the site to Amazon&nbsp;S3
 
