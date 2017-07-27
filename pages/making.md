@@ -9,9 +9,9 @@ permalink: '/making.html'
 
 Building this online résumé was a personal challenge. I wanted to build my first from-scratch site. While it is not really practical to build pretty much everything from scratch, I picked the [Skeleton](http://getskeleton.com/) boiler plate. Having set up a few blogs using [Jekyll](https://jekyllrb.com/), the static site generator, I was confident using Jekyll. So [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) became the starting point. After spending a couple of hours in setting up the logic to programmatically generate the site from the code, the basic setup was ready.
 
-As an Infrastructure person, setting up the site on the cloud (and not GitHub Pages) intrigued me---this is the first time I'm doing this. Here's a gist of what happens behind the scenes:
+As an Infrastructure person, setting up the site on the cloud (and not GitHub Pages) intrigued me---this was the first time I did something like this. Here's a gist of what happens behind the scenes:
 
-1. I add data to the code (basically Markdown files) as posts. These changes are pushed to BitBucket, the source control provider for the site.
+1. I add data (Markdown files) to the code project as posts. These changes are pushed to BitBucket, the source control provider for the site.
 2. Wercker (a Docker-based continuous delivery platform) is triggered as soon as there's a push; it picks up the code from BitBucket.
 3. Wercker has two pipelines, `build` and `deploy`, which, of course, build the site using Jekyll (on a Ruby box), and deploy it to the AWS&nbsp;S3 bucket that hosts the site.
 4. CloudFront is the CDN that delivers the contents of the S3 bucket, to the Web.
@@ -24,7 +24,7 @@ Now to the detailed picture. (This part has been published as a [GitHub Gist](ht
 
 This document has been created for Windows&nbsp;10 Pro. While building the site locally is not entirely necessary, it helps when you need to build the site locally to test out its working.
 
-Enable the [Linux Subsystem on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) feature, and install the necessary components required to be able to build sites using Jekyll. While there may be seemingly less-complicated ways to set up Jekyll, setting it up with WSL is much less hassle. [This post](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) by Dave Rupert helps a great deal with it. Also, some of the [Nokogiri binaries](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) need to be installed.
+Enable the [Linux Subsystem on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) feature, and install the necessary components required to be able to build sites using Jekyll. While there may be seemingly less-complicated ways to set up Jekyll on Windows without WSL, setting it up with WSL is much less hassle. [This post](http://daverupert.com/2016/04/jekyll-on-windows-with-bash/) by Dave Rupert helps a great deal with it. Also, some of the [Nokogiri binaries](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) need to be installed.
 
 #### Building the site locally
 
@@ -33,9 +33,9 @@ There are really many ways to do this, the easiest way being to fork one of the 
 I wanted to build an uncomplicated site, so I used the [Skeleton](http://getskeleton.com/) boilerplate to build the site. There are two ways to go forward from here:
 
 1. Use the `jekyll new` command to get the basic Jekyll site, and then add the Skeleton components.
-2. Use the [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) and rebuild `index.html` and move forward.
+2. Use the [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll), rebuild `index.html` and move forward.
 
-I chose the latter. Sure, I had to still make a few changes to optimise the site, but hey, what's life without adventures?
+I chose the latter. Sure, I still had to make a few changes to optimise the site, but hey, what's life without adventures?
 
 #### Configuring the Amazon&nbsp;S3 bucket
 
@@ -44,8 +44,8 @@ Now comes the creation of the Amazon&nbsp;S3 bucket that would host the site con
 1. Go to the [S3 Management Console](https://console.aws.amazon.com/s3). The prerequisite to this is that you have an AWS account.
 2. Click on **Create bucket**.
 3. Enter the name of the bucket exactly as the URL to host the site; I entered `resume.ramiyer.me` (because I want the site to be live at http://resume.ramiyer.me). I'll refer to this as `your.bucket.name`, going forward.
-4. Select the region and select **Next**. Any region would do, since we're going to use CloudFront anyway. Pick the cheapest one, if you want.
-5. In the screen that appears next, click on **Next**; if you want logging or versioning configured, you may want to select the relevant options.
+4. Select the region and select **Next**. Any region would do, since we're going to use CloudFront anyway.
+5. In the screen that appears next, click on **Next**, unless you want logging or versioning configured.
 6. In the next screen, under **Manage public permissions**, select **Grant public read access to this bucket** and click **Next**.
 7. Review the settings and create the bucket.
 8. Once the bucket is created, open the bucket and go to the **Permissions** tab. Click on **Bucket Policy**.
@@ -94,7 +94,7 @@ Wercker needs to authenticate itself to push content to the S3 bucket. We'll set
 
 #### Configuring Wercker to build and deploy the site to Amazon&nbsp;S3
 
-This is a little tricky part, since we have outdated documentation surrounding it, on the Internet, for now. New users will have a hard time hunting around to get this information. The reason for this is that Wercker apparently changed the underlying system, by introducing Docker. This has brought in some changes to workflows, which obviously brings in subsequent UI and other changes.
+This is a little tricky part, since we have outdated documentation surrounding it, on the Internet, for now. New users will have a hard time hunting around to get this information. The reason for this is that Wercker apparently changed the underlying system, by introducing Docker. This has brought in some changes to workflows, which obviously brings in subsequent user-facing changes.
 
 1. Go to the [Wercker home page](https://app.wercker.com/).
 2. Login with BitBucket.
@@ -154,7 +154,7 @@ Let's first proceed with getting ourselves an SSL certificate. This is optional.
 5. Go to the mailbox configured with the admin address of your domain. You should've received an email to approve the certificate request. Go ahead and approve it after verifying the details.
 6. Refresh the ACM screen, and you should see the certificate that was just issued.
 
-It's now time to set up CloudFront.
+It's now time to set up the CloudFront distribution.
 
 1. Go to the [CloudFront console](https://console.aws.amazon.com/cloudfront/).
 2. Click on **Create distrubution**.
@@ -166,11 +166,11 @@ It's now time to set up CloudFront.
 8. Enter `index.html` in the **Default Root Object** field.
 9. Go ahead and click on **Create Distribution**.
 10. Wait. The process of creating the distribution can take anywhere from ten minutes to a few hours.
-11. Once the **Status** says `Deployed`, and **State** says `Enabled`, the CloudFront distribution should be live. Note down the **Domain name** value for the distribution.
+11. Once the **Status** says `Deployed`, and **State** says `Enabled`, the CloudFront distribution should be live. Note down the **Domain name** value for the distribution; it should be something like `qdw3xburi4bfy.cloudfront.net`.
 
 #### Configuring DNS routing
 
-Your site should now be accessible using the domain name (like `qdw3xburi4bfy.cloudfront.net`) as well. But we want it to be accessible at `your.bucket.name`. This takes some DNS configuration.
+Your site should now be accessible using the domain name (`qdw3xburi4bfy.cloudfront.net`) as well. But we want it to be accessible at `your.bucket.name`. This takes some DNS configuration.
 
 1. Log into the DNS console of your DNS provider (your domain provider in most cases).
 2. Create a new CNAME record, with `your.bucket.name` in the **Name** field, and `qdw3xburi4bfy.cloudfront.net` in the **Points to** field.
