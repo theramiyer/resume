@@ -7,7 +7,7 @@ subtitle: "Behind the scenes"
 permalink: '/making.html'
 ---
 
-Building this online r�sum� was a personal challenge. I wanted to build my first from-scratch site. While it is not really practical to build pretty much everything from scratch, I picked the [Skeleton](http://getskeleton.com/) boiler plate. Having set up a few blogs using [Jekyll](https://jekyllrb.com/), the static site generator, I was confident using Jekyll. So [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) became the starting point. After spending a couple of hours in setting up the logic to programmatically generate the site from the code, the basic setup was ready.
+Building this online résumé was a personal challenge. I wanted to build my first from-scratch site. While it is not really practical to build pretty much everything from scratch, I picked the [Skeleton](http://getskeleton.com/) boiler plate. Having set up a few blogs using [Jekyll](https://jekyllrb.com/), the static site generator, I was confident using Jekyll. So [Skeleton Framework for Jekyll](https://github.com/skeleton-framework/skeleton-framework-jekyll) became the starting point. After spending a couple of hours in setting up the logic to programmatically generate the site from the code, the basic setup was ready.
 
 As an Infrastructure person, setting up the site on the cloud (and not GitHub Pages) intrigued me---this is the first time I'm doing this. Here's a gist of what happens behind the scenes:
 
