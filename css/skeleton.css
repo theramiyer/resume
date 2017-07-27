@@ -305,13 +305,14 @@ li {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
+  color: #933;
   font-family: 'Fira Mono';
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 80%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  background: #FEF3F3;
+  border: 1px solid #F9DEC9;
   border-radius: 4px; }
 pre > code {
   overflow: auto;
@@ -427,18 +428,27 @@ there.
 
 
 /* Custom CSS */
-p a {
-  border-bottom: 1px #222 solid;
+
+a:hover {
+  transition: 0.25s;
+  border-radius: 0.25em;
+  background: #FEF3F3;
+  color: inherit;
 }
 
-p a:hover {
-  border-bottom: 1px #0FA0CE solid;
+a::after {
+  position: relative;
+  content: "\FEFF°";
+  margin-left: 0.10em;
+  font-size: 90%;
+  top: -0.10em;
+  color: #933;
 }
 
 strong {
   font-weight: normal;
   border-radius: 0.25em;
-  background: #fbf3f3;
+  background: #FEF3F3;
 }
 
 .name {
@@ -446,6 +456,7 @@ strong {
   line-height: 1.2;
   letter-spacing: 0.5rem;
   margin-top: 20%;
+  margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Alegreya Sans SC';
@@ -454,6 +465,7 @@ strong {
 .address {
   font-size: 1.5rem;
   line-height: 1.25;
+  margin-bottom: 2rem;
   letter-spacing: 0.25rem;
   font-family: 'Alegreya Sans SC';
   text-transform: uppercase;
@@ -462,6 +474,7 @@ strong {
 .contact {
   font-size: 1.5rem;
   line-height: 1.25;
+  margin-bottom: 2rem;
   letter-spacing: 0.25rem;
   font-family: 'Alegreya Sans SC';
   text-transform: lowercase;
@@ -470,6 +483,7 @@ strong {
 .section {
   font-size: 1.5rem;
   line-height: 1.3;
+  margin-bottom: 2rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   font-family: 'Alegreya Sans SC';
@@ -478,8 +492,12 @@ strong {
   padding-top: 0.5rem;
   margin-top: 3rem;
 }
-.section a:hover{
-  color: #222;  /* Disable change in colour when someone hovers over résumé sections */
+.section a:hover { /* Disable change in colour when someone hovers over résumé sections */
+  color: #222;
+  background: none;
+}
+.section a::after {
+  content: none;
 }
 .org {
   font-size: 2.3rem;
@@ -505,4 +523,8 @@ strong {
 
 .site-footer a:hover {
     text-decoration: underline;
+}
+
+h4 a::after {
+  content: none;
 }
