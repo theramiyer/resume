@@ -9,7 +9,11 @@
     <!--h4 Institution name implemented by post title-->
     <div class="twelve columns">
       <div class="nine columns">
-        <div class="org"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {% if post.more %}
+          <div class="org"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {% else %}
+          <div class="org">{{ post.title }}</div>
+        {% endif %}
       </div>
       <div class="three columns">
         <div class="u-pull-right">

@@ -2,9 +2,9 @@
 layout: "post"
 title: "Part of the Blogosphere"
 date: "2011-05-18"
-tenure: "2011–present"
+tenure: "2011 – present"
 category: "extracurricular"
-subtitle: "Tech and general"
+subtitle: "Tech, literary and general"
 ---
 
 - [Collection of short stories](https://ramiyer.me).
