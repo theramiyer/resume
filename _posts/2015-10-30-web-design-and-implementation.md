@@ -4,7 +4,7 @@ title: "Web Design and Implementation"
 date: "2015-10-30"
 tenure: "2015 – present"
 category: "extracurricular"
-subtitle: "‘The IT Guy’, Meraki Post"
+subtitle: "Meraki Post: a site for book reviews, author interactions, and all things literary"
 ---
 
 - Migrated platforms from Blogger to Jekyll, hosted on [GitHub Pages](https://pages.github.com/), built by [Travis&nbsp;CI](https://travis-ci.org/).
