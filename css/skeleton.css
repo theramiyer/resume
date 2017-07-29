@@ -91,9 +91,6 @@ strong {
     text-decoration: none;
     font-weight: bold;
 }
-.site-footer a:hover {
-    text-decoration: underline;
-}
 h1 a::after, h2 a::after, h3 a::after, h4 a::after, h5 a::after, h6 a::after {
   content: none;
 }
