@@ -8,9 +8,10 @@ subtitle: "Meraki Post"
 ---
 
 - Migrated platforms from Blogger to Jekyll, hosted on GitHub Pages, built by Travis&nbsp;CI.
-- Did an SEO-friendly migrations, along with UX improvements.
-- Set custom logic for build and deployment based on requirements.
+- Did an SEO-friendly migrations, along with UX improvements, including web typography.
+- Set a custom logic for build and deployment based on requirements.
 <!--more-->
 - Designed the site (from a fork of Ghost's theme).
+- Implemented Slack and a few integrations for communication and social site management.
 
-> Cognizant's Code of Business Ethics allows for such work as long as the annual income from the same is under $250, and such work is carried out outside of work hours. Anything falling outside of those conditions has to be reported to the Human Resources. Meraki&nbsp;Post is a community site created and maintained by us, a group of friends with a shared interest in literature.
+> Cognizant's Code of Business Ethics allows for such work as long as the annual income from the same is under $250, and such work is carried out outside of work hours. Anything falling outside of those conditions has to be reported to the Human Resources. [Meraki&nbsp;Post](https://www.merakipost.com/about/) is a community site created and maintained by us, a group of friends with a shared interest in literature.
