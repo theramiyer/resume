@@ -15,30 +15,33 @@ subtitle: "Tech Lead (Cognizant Infrastructure Services)"
 
 #### Awards and Recognition
 
--
+- Associate of the Quarter (Q4, 2016)
+- Outstanding Dependability (2016)
+- Best Tutor (2015)
+- Associate of the Quarter (Q2, 2011)
 
 #### Positions held
 
-##### Tech Lead, Cognizant Infrastructure Services (2015&nbsp;-- 2017)
+##### Tech Lead, Cognizant Infrastructure Services (2015 -- 2017)
 
 - Learnt PowerShell, and implemented over twenty automations, thereby reducing days of manual efforts per year.
 - Managed application performance monitoring using Compuware ClientVantage, and later, implemented Solarwinds Web Performance Monitor.
 - Worked on Microsoft Exchange&nbsp;2010, started handling tasks, almost end-to-end.
 - Helped implement PowerWin, the Windows Forms and PowerShell-based GUI tool for Windows administration, for several clients.
 
-##### Sr. Systems Executive, ITIS (2012&nbsp;-- 2015)
+##### Sr. Systems Executive, ITIS (2012 -- 2015)
 
 - Upskilled; learnt Enterprise Administration on Windows Active Directory.
 - Became a Microsoft Certified Professional (Windows Server 2008&nbsp;R2).
 - Learnt the basics of Citrix XenApp 6.0 and Microsoft System Center Operations Manager&nbsp;2007.
 - Upskilled and Underwent internal movement from Service Desk and Data Administration to Wintel (Windows on Intel).
 
-##### Systems Executive, ITIS (2011&nbsp;-- 2012)
+##### Systems Executive, ITIS (2011 -- 2012)
 
 - Recognised as the Associate of the Quarter, pan-India, for exceeding expectations.
 - Promoted to the next grade in nine months on the basis of performance.
 
-##### Graduate Trainee, IT Infrastructure Service (2010&nbsp;-- 2011)
+##### Graduate Trainee, IT Infrastructure Service (2010 -- 2011)
 
 - Joined into the Service Desk for a leading paper manufacturer in the US.
 - Learnt Data Administration and application administration in parallel.
