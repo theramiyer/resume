@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Published author"
+title: "Published Author"
 date: "2016-01-24"
 tenure: "2016 – present"
 category: "extracurricular"
