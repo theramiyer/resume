@@ -3,7 +3,7 @@ layout: "post"
 title: "Cognizant Technology Solutions"
 date: "2010-08-21"
 tenure: "2010 – present"
-category: "experience"
+category: "1. experience"
 subtitle: "Tech Lead (Cognizant Infrastructure Services)"
 more: true
 ---

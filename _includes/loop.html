@@ -3,7 +3,7 @@
 {% for category in sortedcategories %} <!-- Category loop -->
   <div class="twelve columns">
     <!-- Enable deep linking in sections only in loop -->
-    <div class="section" id="{{ category[0] | slugify }}"><a href="#{{ category[0] | slugify }}">{{ category[0] | capitalize }}</a></div>
+    <div class="section" id="{{ category[0] | split:'. ' | last | slugify }}"><a href="#{{ category[0] | split:". " | last | slugify }}">{{ category[0] | split:". " | last | capitalize }}</a></div>
   </div>
   {% for post in category[1] %}
     <!--h4 Institution name implemented by post title-->

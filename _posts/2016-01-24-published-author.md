@@ -3,7 +3,7 @@ layout: "post"
 title: "Published Author"
 date: "2016-01-24"
 tenure: "2016 – present"
-category: "extracurricular"
+category: "4. extracurricular"
 subtitle: "Fiction and non-fiction books"
 ---
 
