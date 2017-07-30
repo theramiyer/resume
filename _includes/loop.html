@@ -27,11 +27,11 @@
       <div class="twelve columns">
         {% if post.more %}
           {% if post.content contains '<!--more-->' %}
-          {{ post.content | split:'<!--more-->' | first }}<li><a href="{{ post.url }}">More details →</a></ul>
+          {{ post.content | split:'<!--more-->' | first }}<li><a href="{{ post.url }}">More details</a></ul>
           {% elsif post.content contains '</ul>' %}
-          {{ post.content | split:'</ul>' | first }}<li><a href="{{ post.url }}">More details →</a></ul>
+          {{ post.content | split:'</ul>' | first }}<li><a href="{{ post.url }}">More details</a></ul>
           {% else %}
-          {{ post.content | split:'</p>' | first }}<p><a href="{{ post.url }}">More details →</p></p>
+          {{ post.content | split:'</p>' | first }}<p><a href="{{ post.url }}">More details</p></p>
           {% endif %}
         {% else %}
           {% if post.content contains '<!--more-->' %}
