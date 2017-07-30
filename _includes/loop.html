@@ -25,12 +25,22 @@
       <!--Designation or degree custom post implementation-->
       <div class="role">{{ post.subtitle }}</div>
       <div class="twelve columns">
-        {% if post.content contains '<!--more-->' %}
-        {{ post.content | split:'<!--more-->' | first }}
-        {% elsif post.content contains '</ul>' %}
-        {{ post.content | split:'</ul>' | first }}</ul>
+        {% if post.more %}
+          {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}<li><a href="{{ post.url }}">More details →</a></ul>
+          {% elsif post.content contains '</ul>' %}
+          {{ post.content | split:'</ul>' | first }}<li><a href="{{ post.url }}">More details →</a></ul>
+          {% else %}
+          {{ post.content | split:'</p>' | first }}<p><a href="{{ post.url }}">More details →</p></p>
+          {% endif %}
         {% else %}
-        {{ post.content | split:'</p>' | first }}</p>
+          {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}</ul>
+          {% elsif post.content contains '</ul>' %}
+          {{ post.content | split:'</ul>' | first }}</ul>
+          {% else %}
+          {{ post.content | split:'</p>' | first }}</p>
+          {% endif %}
         {% endif %}
       </div>
     </div>
