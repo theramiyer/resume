@@ -12,7 +12,7 @@ class: 'post-template'
 <!-- #post -->
 <header>
   <div class="twelve columns" style="margin-top: 20%;">
-    <div class="section">{{ page.category | capitalize }}</div>
+    <div class="section">{{ page.category | split:". " | last | capitalize }}</div>
   </div>
   <div class="twelve columns">
     <div class="nine columns">
