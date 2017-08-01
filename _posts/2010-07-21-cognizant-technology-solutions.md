@@ -51,6 +51,7 @@ more: true
 - Microsoft Exchange Server&nbsp;2010
 - Solarwinds Web Performance Monitor
 - Microsoft System Center&nbsp;2016 Operations Manager
+- Microsoft System Center Endpoint Protection
 - Windows Server 2008&nbsp;R2
 - Citrix XenApp&nbsp;6
 - Oracle Identity Manager (administration)
