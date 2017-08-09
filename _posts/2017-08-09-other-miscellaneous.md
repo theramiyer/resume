@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Other miscellaneous"
-date: "2017-08-09 10:34"
+date: "2010-07-21"
 tenure: "2010 – present"
 category: "4. extracurricular"
 subtitle: "Catch-all"
