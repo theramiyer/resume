@@ -56,6 +56,6 @@ more: true
 
 #### Past experience
 
-- Sr. Systems Executive, ITIS (2012 -- 2015)
-- Systems Executive, ITIS (2011 -- 2012)
-- Graduate Trainee, IT Infrastructure Service (2010 -- 2011)
+- Sr. Systems Executive, Cognizant ITIS (2012 -- 2015)
+- Systems Executive, Cognizant ITIS (2011 -- 2012)
+- Graduate Trainee, Cognizant IT Infrastructure Services (2010 -- 2011)
