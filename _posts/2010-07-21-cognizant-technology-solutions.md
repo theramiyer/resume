@@ -20,6 +20,7 @@ more: true
 - Best Tutor (2015)
 - The Leading Light (2014)
 - Associate of the Quarter (Q2, 2011)
+- Best Team Automation/Innovation (team award, 2017)
 - Techie Mavericks (team award, 2016)
 
 #### Current job role
