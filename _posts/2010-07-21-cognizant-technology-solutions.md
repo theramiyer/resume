@@ -13,16 +13,6 @@ more: true
 - Implemented over sixty PowerShell-based automation projects for the client.
 <!--more-->
 
-#### Awards and Recognition
-
-- Associate of the Quarter (Q4, 2016, awarded in 2017)
-- Outstanding Dependability (2016)
-- Best Tutor (2015)
-- The Leading Light (2014)
-- Associate of the Quarter (Q2, 2011)
-- Best Team Automation/Innovation (team award, 2017)
-- Techie Mavericks (team award, 2016)
-
 #### Current job role
 
 ##### Tech Lead, Cognizant Infrastructure Services (2015 -- present)
