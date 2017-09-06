@@ -16,7 +16,7 @@ As an Infrastructure person, setting up the site on the cloud (and not GitHub Pa
 3. Wercker has two pipelines, `build` and `deploy`, which, of course, build the site using Jekyll (on a Ruby box), and deploy it to the AWS&nbsp;S3 bucket that hosts the site.
 4. CloudFront is the CDN that delivers the contents of the S3 bucket, to the Web.
 5. Amazon's Certificate Manager provides the SSL certificate that encrypts connections to this site.
-6. WordPress is my DNS provider---I basically bought this domain from them for blogging, but it can be used with AWS.
+6. Necessary DNS entries are added to the DNS zone file.
 
 Now to the detailed picture. (This part has been published as a [GitHub Gist](https://gist.github.com/theramiyer/d88a00498245a760716ec0c3e3d9230e) as well, for the community.)
 
