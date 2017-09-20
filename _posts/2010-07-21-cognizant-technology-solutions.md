@@ -11,6 +11,7 @@ more: true
 - Recognised as the Associate of the Quarter twice (Q2, 2011; Q4, 2016).
 - Led the PowerShell-based automation community at the Sub-Business Unit level.
 - Implemented over sixty PowerShell-based automation projects for the client.
+- Part of the pan-organisation Microsoft community, contribute to automations.
 <!--more-->
 
 #### Current job role
@@ -21,13 +22,14 @@ more: true
 - Managed application performance monitoring using Compuware ClientVantage, and later, implemented Solarwinds Web Performance Monitor; help maintain an **application availability SLA of >99%**.
 - Managed Microsoft Exchange&nbsp;2010, end-to-end, delivered **zero unplanned downtime** over the last year.
 - Helped implement PowerWin, the Windows Forms and PowerShell-based GUI tool for Windows administration, for several clients, **speeding up troubleshooting and planning by up to 30%**.
+- As part of Microsoft Community within Cognizant, shared recommendations on implementation of solutions, and created custom scripts for automation with several teams working for different accounts/customers.
 
 #### Technical profile
 
 ##### Technological specialisation
 
 - Windows PowerShell.
-- Understanding of container-based infrastructure (I built this site on a Docker-based container, for instance).
+- Understanding of container-based infrastructure. (I built this site on a Docker-based container, for instance.)
 - Trained and certified in Microsoft Azure (Infrastructure).
 - Solarwinds Web Performance Monitor.
 - System Center Operations Manager (currently implementing SCOM&nbsp;2016).
