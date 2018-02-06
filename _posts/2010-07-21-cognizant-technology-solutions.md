@@ -18,10 +18,12 @@ more: true
 
 ##### Tech Lead, Cognizant Infrastructure Services (2015 -- present)
 
+- Drove the implementation of SCOM&nbsp;2016 in the environment including implementing best practices in monitoring and lightweight administration.
 - **Reduced several weeks' worth of manual efforts** per year by implementing automation solutions using Windows PowerShell.
+- Worked on redefining several technical reports for the client to project those metrics important for business decision-making, to use IT at its full potential.
 - Managed application performance monitoring using Compuware ClientVantage, and later, implemented Solarwinds Web Performance Monitor; help maintain an **application availability SLA of >99%**.
 - Managed Microsoft Exchange&nbsp;2010, end-to-end, delivered **zero unplanned downtime** over the last year.
-- Helped implement PowerWin, the Windows Forms and PowerShell-based GUI tool for Windows administration, for several clients, **speeding up troubleshooting and planning by up to 30%**.
+- Helped implement PowerWin, a Windows-Forms-and-PowerShell-based GUI tool for Windows administration, for several clients, **speeding up troubleshooting and planning by up to 30%**.
 - As part of Microsoft Community within Cognizant, shared recommendations on implementation of solutions, and created custom scripts for automation with several teams working for different accounts/customers.
 
 #### Technical profile
@@ -31,20 +33,21 @@ more: true
 - Windows PowerShell.
 - Understanding of container-based infrastructure. (I built this site on a Docker-based container, for instance.)
 - Trained and certified in Microsoft Azure (Infrastructure).
-- Solarwinds Web Performance Monitor.
 - System Center Operations Manager (currently implementing SCOM&nbsp;2016).
+- Solarwinds Web Performance Monitor.
 - Microsoft Exchange&nbsp;2010.
 
 ##### Technologies worked on
 
 - Windows PowerShell, including PowerShell modules for:
   - Microsoft Exchange 2010
+  - Microsoft System Center
   - VMware vSphere (PowerCLI)
   - Citrix XenApp&nbsp;7.6
   - Active Directory
+- Microsoft System Center&nbsp;2016 Operations Manager
 - Microsoft Exchange Server&nbsp;2010
 - Solarwinds Web Performance Monitor
-- Microsoft System Center&nbsp;2016 Operations Manager
 - Microsoft System Center Endpoint Protection
 - Windows Server 2008&nbsp;R2, 2012&nbsp;R2
 

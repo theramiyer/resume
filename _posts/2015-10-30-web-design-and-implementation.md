@@ -1,17 +1,20 @@
 ---
 layout: "post"
-title: "Web Design and Implementation"
+title: "Enterprise-grade Web Solution and Collaboration"
 date: "2015-10-30"
 tenure: "2015 – present"
 category: "4. extracurricular"
 subtitle: "Meraki Post: book reviews, author interactions, and all things literary"
+more: true
 ---
 
-- Migrated platforms from Blogger to Jekyll, hosted on [GitHub Pages](https://pages.github.com/), built by [Travis&nbsp;CI](https://travis-ci.org/).
-- SEO-friendly migration, along with UX improvements, including web typography.
+- Migrated the site from Blogger CMS to a static site built using [Jekyll](https://jekyllrb.com/).
+- Hosted the site on [Amazon&nbsp;S3](aws.amazon.com/s3/), built by [GitLab&nbsp;CI](https://about.gitlab.com/gitlab-ci/), delivered by [CloudFront](https://aws.amazon.com/cloudfront/).
 - Set a custom logic for build and deployment based on requirements.
 <!--more-->
+- Set up the domain and email exchange, including **security best practices**.
+- SEO-friendly migration, along with UX improvements, including web typography.
 - Designed the site (from a fork of Ghost's theme).
-- Implemented Slack and a few integrations for communication and social interaction management.
+- Implemented Slack and configured integrations for monitoring, communication and social interactions.
 
 > Cognizant's Code of Business Ethics allows for such work as long as the annual income from the same is under $250, and such work is carried out outside of work hours. Anything falling outside of those conditions has to be reported to the Human Resources. [Meraki&nbsp;Post](https://www.merakipost.com/about/) is a community site created and maintained by us, a group of friends with a shared interest in literature.

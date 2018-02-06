@@ -13,4 +13,4 @@ more: true
 - Served as the President of the Students' Forum.
 <!--more-->
 - Served as the Editor of the yearly departmental magazine.
-- Participated and won awards in several state- and national-level intercollegiate competitions.
+- Participated and won awards in several national- and state-level intercollegiate competitions.
