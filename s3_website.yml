@@ -1,0 +1,20 @@
+# These vars are passed from GitlabCI Secure Variables
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: <%= ENV['S3_BUCKET'] %>
+
+exclude_from_upload:
+  - Gemfile
+  - Gemfile.lock
+
+site: public/
+
+gzip: true
+s3_reduced_redundancy: true
+
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_ID'] &>
+cloudfront_wildcard_invalidation: true
+
+max_age:
+  "css/*": 691200
+  "images/*": 691200
