@@ -28,6 +28,7 @@ build:
             code: bundle exec jekyll build --trace
 deploy:
     steps:
+        - find public/ -type f ! -iname 'index.html' ! -iname '404.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
         - s3sync:
             key-id: $AWS_ACCESS_KEY_ID
             key-secret: $AWS_SECRET_ACCESS_KEY
