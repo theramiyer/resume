@@ -12,7 +12,7 @@ site: public/
 gzip: true
 s3_reduced_redundancy: true
 
-cloudfront_distribution_id: <%= ENV['CLOUDFRONT_ID'] &>
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_ID'] %>
 cloudfront_wildcard_invalidation: true
 
 max_age:
