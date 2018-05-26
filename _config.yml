@@ -24,3 +24,9 @@ kramdown:
 
 # Permalinks
 permalink: :title
+
+collections:
+  - experience
+  - achievements
+  - education
+  - extracurricular
