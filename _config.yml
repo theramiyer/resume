@@ -26,7 +26,15 @@ kramdown:
 permalink: :title
 
 collections:
-  - experience
-  - achievements
-  - education
-  - extracurricular
+  experience:
+    title: Experience
+    sequence: 1
+  achievements:
+    title: Achievements and Certifications
+    sequence: 2
+  education:
+    title: Education
+    sequence: 3
+  extracurricular:
+    title: Extracurricular
+    sequence: 4
