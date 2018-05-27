@@ -1,5 +1,5 @@
 <!-- h3 Section headings, implemented by categories -->
-{% assign sections = site.collections | sort: 'sequence' %}
+{% assign sections = site.collections | sort: 'sequence' | slice: 1, 4 %}
 {% for section in sections %} <!-- Category loop -->
   <div class="twelve columns">
     <!-- Enable deep linking in sections only in loop -->
