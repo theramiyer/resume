@@ -28,7 +28,8 @@ permalink: :title
 collections:
   experience:
     title: Experience
-    sequence: 1
+    output: true
+    permalink: /experience/:name/
   achievements:
     title: Achievements and Certifications
     sequence: 2
