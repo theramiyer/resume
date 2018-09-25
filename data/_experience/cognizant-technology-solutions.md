@@ -2,7 +2,7 @@
 layout: page
 title: "Cognizant Technology Solutions"
 tenure: "2010 – present"
-subtitle: "Tech Lead (Cognizant Infrastructure Services)"
+subtitle: "Infra. Technology Specialist"
 ---
 
 - Recognised as the Associate of the Quarter twice (Q2, 2011; Q4, 2016).
@@ -13,7 +13,7 @@ subtitle: "Tech Lead (Cognizant Infrastructure Services)"
 
 #### Current job role
 
-##### Tech Lead, Cognizant Infrastructure Services (2015 -- present)
+##### Infra. Technology Specialist
 
 - Drove the implementation of SCOM&nbsp;2016 in the environment including implementing best practices in monitoring and lightweight administration.
 - **Reduced several weeks' worth of manual efforts** per year by implementing automation solutions using Windows PowerShell.
@@ -47,9 +47,3 @@ subtitle: "Tech Lead (Cognizant Infrastructure Services)"
 - Solarwinds Web Performance Monitor
 - Microsoft System Center Endpoint Protection
 - Windows Server 2008&nbsp;R2, 2012&nbsp;R2
-
-#### Past experience
-
-- Sr. Systems Executive, Cognizant ITIS (2012 -- 2015)
-- Systems Executive, Cognizant ITIS (2011 -- 2012)
-- Graduate Trainee, Cognizant IT Infrastructure Services (2010 -- 2011)
