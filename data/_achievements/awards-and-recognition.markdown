@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Awards and Recognition"
-tenure: "2010 – 2017"
+tenure: "2010 – present"
 subtitle: "Cognizant Technology Solutions"
 ---
 
