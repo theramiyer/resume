@@ -42,6 +42,20 @@ layout: default
           <div class="role">
             {{ item.subtitle }}
           </div>
+          <div>
+            {% if item.content contains "<!--more-->" %}
+              {% assign synopsis = item.content | split: "<!--more-->" | first %}
+              {% if synopsis contains "<ul>" %}<!-- In case of unordered lists -->
+                {{ synopsis }}<li><a href="{{ item.url }}">More details&hellip;</a></li></ul>
+              {% elsif synopsis contains "<ol>" %}<!-- In case of ordered lists -->
+                {{ synopsis }}<li><a href="{{ item.url }}">More details&hellip;</a></li></ol>
+              {% else %}<!-- In case of paragraph -->
+                {{ synopsis }}
+              {% endif %}
+            {% else %}<!-- no "more" tag -->
+              {{ item.content }}
+            {% endif %}<!-- end "more" tag condition -->
+          </div>
           {% endfor %}
         </div>
       {% endif %}
