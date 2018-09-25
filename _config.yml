@@ -27,22 +27,23 @@ permalink: :title
 
 collections:
   experience:
-    title: Experience
+    name: Experience
     output: true
     permalink: /experience/:name/
     sequence: 1
   achievements:
-    title: Achievements
+    name: Achievements
+    displayname: Achievements and Certifications
     output: true
     permalink: /achievements/:name/
     sequence: 2
   education:
-    title: Education
+    name: Education
     output: true
     permalink: /education/:name/
     sequence: 3
   extracurricular:
-    title: Extracurricular
+    name: Extracurricular
     output: true
     permalink: /extracurricular/:name/
     sequence: 4

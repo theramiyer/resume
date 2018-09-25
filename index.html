@@ -16,11 +16,22 @@ layout: default
     </div>
 
     <!-- Actual content -->
-    <div class="twelve columns">
-      <div class="section" id="experience">
-        <a href="#experience">Experience</a>
-      </div>
-    </div>
+    {% assign sections = site.collections | sort: 'sequence' %}
+    {% for section in sections %}
+      {% if section.name %}
+        <div class="twelve columns">
+          {% assign name = section.name | slugify %}
+          <div class="section" id="{{ name }}">
+            <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
+          </div>
+          {% for item in site.[name] %}
+            <p>
+              {{ item.title }}
+            </p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
 
     <p style="font-size:1.7rem;">
       Setup help to source control the site on <a href="https://bitbucket.org">BitBucket</a>, build and deploy it using <a href="https://app.wercker.com">Wercker</a>, store it at and host it from <a href="https://aws.amazon.com/s3">Amazon&nbsp;S3</a>, and deliver it by <a href="https://aws.amazon.com/cloudfront">CloudFront</a> is available in the <a href="/making"><strong>technical notes</strong></a>.
