@@ -13,7 +13,7 @@ phone: "+918861065751"
 website: ramiyer.me
 
 baseurl: /
-url: "//resume.ramiyer.me" # the base hostname & protocol for your site
+url: "//about.ramiyer.me" # the base hostname & protocol for your site
 twitter_username: theramiyer
 github_username:  theramiyer
 
@@ -31,21 +31,21 @@ collections:
   experience:
     name: Experience
     output: true
-    permalink: /experience/:name/
+    permalink: /:collection/:name/
     sequence: 1
   achievements:
     name: Achievements
     displayname: Achievements and Certifications
     output: true
-    permalink: /achievements/:name/
+    permalink: /:collection/:name/
     sequence: 2
   education:
     name: Education
     output: true
-    permalink: /education/:name/
+    permalink: /:collection/:name/
     sequence: 3
   extracurricular:
     name: Extracurricular
     output: true
-    permalink: /extracurricular/:name/
+    permalink: /:collection/:name/
     sequence: 4
