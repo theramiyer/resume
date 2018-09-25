@@ -27,7 +27,7 @@ layout: default
           {% for item in site.[name] %}
           <div class="twelve columns">
             <div class="nine columns">
-              {% if item.more %}
+              {% if item.content contains "<!--more-->" %}
                 <div class="org"><a href="{{ item.url }}">{{ item.title }}</a></div>
               {% else %}
                 <div class="org">{{ item.title }}</div>
