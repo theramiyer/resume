@@ -28,7 +28,7 @@ subtitle: "Infra. Technology Specialist"
 ##### Technological specialisation
 
 - Windows PowerShell.
-- Understanding of container-based infrastructure. (I built this site on a Docker-based container, for instance.)
+- Understanding of container-based infrastructure.
 - Trained and certified in Microsoft Azure (Infrastructure).
 - System Center Operations Manager (currently implementing SCOM&nbsp;2016).
 - Solarwinds Web Performance Monitor.
