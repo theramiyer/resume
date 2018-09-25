@@ -1,9 +1,7 @@
 ---
 layout: "post"
 title: "Awards and Recognition"
-date: "2010-07-21"
 tenure: "2010 – 2017"
-category: "2. achievements and certifications"
 subtitle: "Cognizant Technology Solutions"
 ---
 

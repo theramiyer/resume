@@ -1,11 +1,8 @@
 ---
 layout: "post"
 title: "Enterprise-grade Web Solution and Collaboration"
-date: "2015-10-30"
 tenure: "2015 – present"
-category: "4. extracurricular"
 subtitle: "Meraki Post: book reviews, author interactions, and all things literary"
-more: true
 ---
 
 - Migrated the site from Blogger CMS to a static site built using [Jekyll](https://jekyllrb.com/).

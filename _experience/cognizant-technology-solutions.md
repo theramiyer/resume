@@ -3,7 +3,6 @@ layout: page
 title: "Cognizant Technology Solutions"
 tenure: "2010 – present"
 subtitle: "Tech Lead (Cognizant Infrastructure Services)"
-more: true
 ---
 
 - Recognised as the Associate of the Quarter twice (Q2, 2011; Q4, 2016).
