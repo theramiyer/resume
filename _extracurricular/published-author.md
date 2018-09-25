@@ -3,6 +3,7 @@ layout: "post"
 title: "Published Author"
 tenure: "2016 – present"
 subtitle: "Fiction and non-fiction books"
+sequence: 1
 ---
 
 - Published author of a literary fiction novelette, _The Damp Roman Candle_.

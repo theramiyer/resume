@@ -3,6 +3,7 @@ layout: "post"
 title: "Other miscellaneous"
 tenure: "2010 – present"
 subtitle: "Catch-all"
+sequence: 4
 ---
 
 - Part of Cognizant's CSR wing, Outreach; taught Computer Literacy to children from government schools.

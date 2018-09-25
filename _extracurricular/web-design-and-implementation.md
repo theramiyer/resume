@@ -3,6 +3,7 @@ layout: "post"
 title: "Enterprise-grade Web Solution and Collaboration"
 tenure: "2015 – present"
 subtitle: "Meraki Post: book reviews, author interactions, and all things literary"
+sequence: 2
 ---
 
 - Migrated the site from Blogger CMS to a static site built using [Jekyll](https://jekyllrb.com/).

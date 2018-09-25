@@ -3,6 +3,7 @@ layout: "post"
 title: "Part of the Blogosphere"
 tenure: "2011 – present"
 subtitle: "Tech, literary and general"
+sequence: 3
 ---
 
 - [Collection of short stories](http://ramiyer.me).
