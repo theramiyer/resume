@@ -24,7 +24,9 @@ layout: default
           <div class="section" id="{{ name }}">
             <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
           </div>
-          {% for item in site.[name] %}
+          {% assign tenureitems = site.[name] | sort: "tenure" | reverse %}
+          {% assign items = tenureitems | sort: "sequence" %}
+          {% for item in items %}
           <div class="twelve columns">
             <div class="nine columns">
               {% if item.content contains "<!--more-->" %}
