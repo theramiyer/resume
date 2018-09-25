@@ -25,9 +25,15 @@ layout: default
             <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
           </div>
           {% for item in site.[name] %}
-            <p>
-              {{ item.title }}
-            </p>
+            <div class="nine-columns">
+              <div class="org">
+                {% if item.more %}
+                  <a href="{{ item.url }}">{{ item.title }}</a>
+                {% else %}
+                  {{ item.title }}
+                {% endif %}
+              </div>
+            </div>
           {% endfor %}
         </div>
       {% endif %}
