@@ -6,6 +6,6 @@ subtitle: "Tech, literary and general"
 sequence: 3
 ---
 
-- [Collection of short stories](http://ramiyer.me).
-- [Tech blog focussed on beginners in IT](http://tyro.ramiyer.me).
+- [Collection of short stories](//ramiyer.me/posts/).
+- [Tech blog focussed on beginners in IT](http://tech.ramiyer.me).
 - [Blog of opinions, and on life in general](http://blog.ramiyer.me).
