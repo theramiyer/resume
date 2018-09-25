@@ -12,7 +12,25 @@ layout: default
     <!-- h2 Address and contact details -->
     <div class="twelve columns">
       <div class="address">{{ site.address }}</div>
-      <div class="contact">{{ site.phone }} {{ site.email }}</div>
+      <div class="contact">
+        {% if site.phone %}
+          {% if site.email or site.website %}
+            {{ site.phone }} |
+          {% else %}
+            {{ site.phone }}
+          {% endif %}
+        {% endif %}
+        {% if site.email %}
+          {% if site.website %}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a> |
+          {% else %}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% endif %}
+        {% endif %}
+        {% if site.website %}
+          <a href="{% if site.website contains '//' %}{{ site.website }}{% else %}//{{ site.website }}{% endif %}">{{ site.website }}</a>
+        {% endif %}
+      </div>
     </div>
 
     <!-- Actual content -->
