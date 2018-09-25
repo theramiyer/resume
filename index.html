@@ -42,7 +42,7 @@ layout: default
           <div class="section" id="{{ name }}">
             <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
           </div>
-          {% assign tenureitems = site.[name] | sort: "tenure" | reverse %}
+          {% assign tenureitems = site[name] | sort: "tenure" | reverse %}
           {% assign items = tenureitems | sort: "sequence" %}
           {% for item in items %}
           <div class="twelve columns">
