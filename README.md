@@ -10,38 +10,30 @@ First things first: modify the data in `config.yml` to make the site your own (a
 
 ### Structure
 
-All your data should go to `_posts`; each entry in the résumé is a post. [Markdown Writer](https://atom.io/packages/markdown-writer) would help you a lot with this (Markdown Writer config is included).
+This site is implemented using Jekyll Collections.
+1. Edit the `config.yml`; modify the `collections` to suit your needs.
+2. Create folders within the `data` directory, named `_collectionName`.
+3. Create Markdown files with the following YAML:
+  ``` YAML
+  ---
+  layout: "post" # The post layout design is preferred here
+  title: "Name of the institution/organisation"
+  subtitle: "What you did at the organisation"
+  tenure: "2007 – 10" # The tenure for which you were part of the organisation
+  ---
+  ```
 
-Ensure that each of your posts has the following frontmatter:
+Ensure that you have very few and specific collections; they'd better have one-word `name`. If you would like a longer display name, use the displayname `property`. An example is the 'Achievements and Certifications'. These form the sections of the résumé, such as _Education_, _Experience_, and so on.
 
-``` YAML
----
-layout: "post"
-title: "Name of the institution/organisation"
-subtitle: "What you did at the organisation"
-date: "2000-01-01" # Preferably the day you started
-tenure: "2007 – 10" # The tenure for which you were part of the organisation
-category: "Section name goes here"
----
-```
-
-Ensure that you have very few and specific categories (categories can contain spaces, but must be consistent across the site). These categories are what form the sections of the résumé, such as _Education_, _Experience_, and so on.
-
-The sections are sorted by name. I have chosen the names that comply with this limitation. I'll work further on polishing this part so we can have custom sorting, but that's not one of my priorities. If any of you has an idea about how to do this, please _submit a pull request_, I'd be glad to add that and, obviously, attribute it to you.
+Collections will by default be sorted by name. If you would like to use a specific order, use the `sequence` property. This setup works for me. If it doesn't for you, please feel free to fork the repo, polish it, and submit a pull request. I'd be glad to add the modification if it meets all requirements, and obviously, attribute it to you.
 
 ### Making posts
 
-I recommend that the post be started with bullet points. This goes well with the minimalistic design of the résumé. I also recommend that only three or four points be displayed per post. This makes it look concise.
+I recommend that the post be started with bullet points. This goes well with the minimalistic design of the résumé. I also recommend that only three or four points be displayed per post. This makes the resume look concise.
 
-Each of the post links is clickable. What's shown in the main page is just the summary.
+What's shown in the main page is just the summary. The _clickability_ depends on where Jekyll finds the `<!--more-->` tag. If no <!--more--> tag is found, the title will not be clickable. Of course, if you know the permalink, you can always navigate to it.
 
-The summary is decided based on the following (in this order):
-
-1. Appearance of a `<!--more-->` tag in the post.
-2. A closing `</ul>` tag.
-3. The first paragraph.
-
-You may add a `<!--more-->` tag in the middle of an unordered list---that's quite acceptable. In this case, the summary would be truncated at the appearance of the `<!--more-->`. Therefore, if the post is like:
+You may add a `<!--more-->` tag in the middle of an unordered list---it's acceptable. Therefore, if the post is like:
 
 ``` markdown
 - Point one
@@ -65,4 +57,4 @@ Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web
 
 Skeleton-framework-Jekyll was created by [Bradford Lynch](https://twitter.com/blynch41) for better Skeleton and Jekyll harmony.
 
-Skeleton Resume, a minimalistic online résumé, was created by [Ram Iyer](https://github.com/theramiyer) based on Skeleton, built by Jekyll.
+_Skeleton Resume_, a minimalistic online résumé, was created by [Ram Iyer](https://github.com/theramiyer) based on Skeleton, built by Jekyll.

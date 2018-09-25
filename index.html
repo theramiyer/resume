@@ -12,13 +12,77 @@ layout: default
     <!-- h2 Address and contact details -->
     <div class="twelve columns">
       <div class="address">{{ site.address }}</div>
-      <div class="contact">{{ site.phone }} {{ site.email }}</div>
+      <div class="contact">
+        {% if site.phone %}
+          {% if site.email or site.website %}
+            {{ site.phone }} |
+          {% else %}
+            {{ site.phone }}
+          {% endif %}
+        {% endif %}
+        {% if site.email %}
+          {% if site.website %}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a> |
+          {% else %}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% endif %}
+        {% endif %}
+        {% if site.website %}
+          <a href="{% if site.website contains '//' %}{{ site.website }}{% else %}//{{ site.website }}{% endif %}" target="_blank">{{ site.website }}</a>
+        {% endif %}
+      </div>
     </div>
 
-    {% include loop.html %}
+    <!-- Actual content -->
+    {% assign sections = site.collections | sort: 'sequence' %}
+    {% for section in sections %}
+      {% if section.name %}
+        <div class="twelve columns">
+          {% assign name = section.name | slugify %}
+          <div class="section" id="{{ name }}">
+            <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
+          </div>
+          {% assign tenureitems = site[name] | sort: "tenure" | reverse %}
+          {% assign items = tenureitems | sort: "sequence" %}
+          {% for item in items %}
+          <div class="twelve columns">
+            <div class="nine columns">
+              {% if item.content contains "<!--more-->" %}
+                <div class="org"><a href="{{ item.url }}">{{ item.title }}</a></div>
+              {% else %}
+                <div class="org">{{ item.title }}</div>
+              {% endif %}
+            </div>
+            <div class="three columns">
+              <div class="u-pull-right">
+                <div class="org">{{ item.tenure }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="role">
+            {{ item.subtitle }}
+          </div>
+          <div>
+            {% if item.content contains "<!--more-->" %}
+              {% assign synopsis = item.content | split: "<!--more-->" | first %}
+              {% if synopsis contains "<ul>" %}<!-- In case of unordered lists -->
+                {{ synopsis }}<li><a href="{{ item.url }}">More details&hellip;</a></li></ul>
+              {% elsif synopsis contains "<ol>" %}<!-- In case of ordered lists -->
+                {{ synopsis }}<li><a href="{{ item.url }}">More details&hellip;</a></li></ol>
+              {% else %}<!-- In case of paragraph -->
+                {{ synopsis }}
+              {% endif %}
+            {% else %}<!-- no "more" tag -->
+              {{ item.content }}
+            {% endif %}<!-- end "more" tag condition -->
+          </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
 
     <p style="font-size:1.7rem;">
-      Setup help to source control the site on <a href="https://bitbucket.org">BitBucket</a>, build and deploy it using <a href="https://app.wercker.com">Wercker</a>, store it at and host it from <a href="https://aws.amazon.com/s3">Amazon&nbsp;S3</a>, and deliver it by <a href="https://aws.amazon.com/cloudfront">CloudFront</a> is available in the <a href="/making"><strong>technical notes</strong></a>.
+      The code for this site was once source-controlled on <a href="https://bitbucket.org">BitBucket</a>, built and deployed using <a href="https://app.wercker.com">Wercker</a>, stored at and hosted from <a href="https://aws.amazon.com/s3">Amazon&nbsp;S3</a>, and delivered using <a href="https://aws.amazon.com/cloudfront">CloudFront</a>. The <a href="/making"><strong>technical notes</strong></a> contain the how-to. Now, it is hosted off of GitHub Pages.
     </p>
     <p style="font-size:1.7rem;">
       <span style="color:#933;">°</span> indicates links.

@@ -1,10 +1,9 @@
 ---
 layout: "post"
 title: "Published Author"
-date: "2016-01-24"
 tenure: "2016 – present"
-category: "4. extracurricular"
 subtitle: "Fiction and non-fiction books"
+sequence: 1
 ---
 
 - Published author of a literary fiction novelette, _The Damp Roman Candle_.

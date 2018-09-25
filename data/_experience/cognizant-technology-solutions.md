@@ -1,11 +1,8 @@
 ---
-layout: "post"
+layout: page
 title: "Cognizant Technology Solutions"
-date: "2010-08-21"
 tenure: "2010 – present"
-category: "1. experience"
-subtitle: "Tech Lead (Cognizant Infrastructure Services)"
-more: true
+subtitle: "Infra. Technology Specialist"
 ---
 
 - Recognised as the Associate of the Quarter twice (Q2, 2011; Q4, 2016).
@@ -16,7 +13,7 @@ more: true
 
 #### Current job role
 
-##### Tech Lead, Cognizant Infrastructure Services (2015 -- present)
+##### Infra. Technology Specialist
 
 - Drove the implementation of SCOM&nbsp;2016 in the environment including implementing best practices in monitoring and lightweight administration.
 - **Reduced several weeks' worth of manual efforts** per year by implementing automation solutions using Windows PowerShell.
@@ -31,7 +28,7 @@ more: true
 ##### Technological specialisation
 
 - Windows PowerShell.
-- Understanding of container-based infrastructure. (I built this site on a Docker-based container, for instance.)
+- Understanding of container-based infrastructure.
 - Trained and certified in Microsoft Azure (Infrastructure).
 - System Center Operations Manager (currently implementing SCOM&nbsp;2016).
 - Solarwinds Web Performance Monitor.
@@ -50,9 +47,3 @@ more: true
 - Solarwinds Web Performance Monitor
 - Microsoft System Center Endpoint Protection
 - Windows Server 2008&nbsp;R2, 2012&nbsp;R2
-
-#### Past experience
-
-- Sr. Systems Executive, Cognizant ITIS (2012 -- 2015)
-- Systems Executive, Cognizant ITIS (2011 -- 2012)
-- Graduate Trainee, Cognizant IT Infrastructure Services (2010 -- 2011)

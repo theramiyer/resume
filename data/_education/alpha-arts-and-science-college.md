@@ -2,10 +2,7 @@
 layout: "post"
 title: "Alpha Arts and Science College"
 subtitle: "B.Sc. (Electronics and Communications)"
-date: "2010-07-21"
 tenure: "2007 – 2010"
-category: "3. education"
-more: true
 ---
 
 - University of Madras rank-holder in Major (13<sup>th</sup>).

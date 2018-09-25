@@ -6,10 +6,11 @@ timezone: Asia/Kolkata
 title: Ram Iyer’s Résumé
 description: Ram Iyer’s online résumé
 
-name: "Ramakrishnan R. Iyer" # Your full name here
+name: "Ramakrishnan R.&hairsp;Iyer" # Your full name here
+address: "513, 19<sup>th</sup> Cross, Purnapragna Layout, Bangalore, KA 560061"
 email: "&#114;&#097;&#109;&#046;&#105;&#121;&#101;&#114;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#105;&#110;" # Encoded in order to prevent spam
 phone: "+918861065751"
-address: "513, 19<sup>th</sup> Cross, Purnapragna Layout, Bangalore, KA 560061"
+website: ramiyer.me
 
 baseurl: /
 url: "//resume.ramiyer.me" # the base hostname & protocol for your site
@@ -24,3 +25,27 @@ kramdown:
 
 # Permalinks
 permalink: :title
+
+collections_dir: data
+collections:
+  experience:
+    name: Experience
+    output: true
+    permalink: /experience/:name/
+    sequence: 1
+  achievements:
+    name: Achievements
+    displayname: Achievements and Certifications
+    output: true
+    permalink: /achievements/:name/
+    sequence: 2
+  education:
+    name: Education
+    output: true
+    permalink: /education/:name/
+    sequence: 3
+  extracurricular:
+    name: Extracurricular
+    output: true
+    permalink: /extracurricular/:name/
+    sequence: 4
