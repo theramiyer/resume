@@ -25,15 +25,20 @@ layout: default
             <a href="#{{ name }}">{% if section.displayname %}{{ section.displayname }}{% else %}{{ name }}{% endif %}</a>
           </div>
           {% for item in site.[name] %}
-            <div class="nine-columns">
-              <div class="org">
-                {% if item.more %}
-                  <a href="{{ item.url }}">{{ item.title }}</a>
-                {% else %}
-                  {{ item.title }}
-                {% endif %}
+          <div class="twelve columns">
+            <div class="nine columns">
+              {% if item.more %}
+                <div class="org"><a href="{{ item.url }}">{{ item.title }}</a></div>
+              {% else %}
+                <div class="org">{{ item.title }}</div>
+              {% endif %}
+            </div>
+            <div class="three columns">
+              <div class="u-pull-right">
+                <div class="org">{{ item.tenure }}</div>
               </div>
             </div>
+          </div>
           {% endfor %}
         </div>
       {% endif %}
