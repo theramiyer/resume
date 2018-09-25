@@ -17,29 +17,9 @@ layout: default
 
     <!-- Actual content -->
     <div class="twelve columns">
-      <div class="section" id="section">
+      <div class="section" id="experience">
         <a href="#experience">Experience</a>
       </div>
-    </div>
-    <div class="twelve columns">
-      {% for experience in site.experience %}
-        <div class="nine columns">
-          <div class="org">
-            {% if experience.more %}
-              <div class="org"><a href="{{ experience.url }}">{{ experience.title }}</a></div>
-            {% else %}
-              <div class="org">{{ experience.title }}</div>
-            {% endif %}
-          </div>
-        </div>
-        <div class="three columns">
-          <div class="u-pull-right">
-            <div class="org">
-              {{ experience.tenure }}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
     </div>
 
     <p style="font-size:1.7rem;">
