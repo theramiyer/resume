@@ -15,4 +15,4 @@ sequence: 2
 - Designed the site (from a fork of Ghost's theme).
 - Implemented Slack and configured integrations for monitoring, communication and social interactions.
 
-> Cognizant's Code of Business Ethics allows for such work as long as the annual income from the same is under $250, and such work is carried out outside of work hours. Anything falling outside of those conditions has to be reported to the Human Resources. [Meraki&nbsp;Post](https://www.merakipost.com/about/) is a community site created and maintained by us, a group of friends with a shared interest in literature.
+> Cognizant's Code of Business Ethics allows for such work as long as the annual income from the same is under $250, and such work is carried out outside of work hours. [Meraki&nbsp;Post](https://www.merakipost.com/about/) is a non-profit community site created and maintained by us, a group of friends with a shared interest in literature.
