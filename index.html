@@ -28,7 +28,7 @@ layout: default
           {% endif %}
         {% endif %}
         {% if site.website %}
-          <a href="{% if site.website contains '//' %}{{ site.website }}{% else %}//{{ site.website }}{% endif %}">{{ site.website }}</a>
+          <a href="{% if site.website contains '//' %}{{ site.website }}{% else %}//{{ site.website }}{% endif %}" target="_blank">{{ site.website }}</a>
         {% endif %}
       </div>
     </div>
