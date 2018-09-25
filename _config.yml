@@ -30,15 +30,19 @@ collections:
     title: Experience
     output: true
     permalink: /experience/:name/
+    sequence: 1
   achievements:
     title: Achievements
     output: true
     permalink: /achievements/:name/
+    sequence: 2
   education:
     title: Education
     output: true
     permalink: /education/:name/
+    sequence: 3
   extracurricular:
     title: Extracurricular
     output: true
     permalink: /extracurricular/:name/
+    sequence: 4
