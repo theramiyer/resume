@@ -31,7 +31,7 @@ collections:
     output: true
     permalink: /experience/:name/
   achievements:
-    title: Achievements and Certifications
+    title: Achievements
     output: true
     permalink: /achievements/:name/
   education:
