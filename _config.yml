@@ -32,10 +32,13 @@ collections:
     permalink: /experience/:name/
   achievements:
     title: Achievements and Certifications
-    sequence: 2
+    output: true
+    permalink: /achievements/:name/
   education:
     title: Education
-    sequence: 3
+    output: true
+    permalink: /education/:name/
   extracurricular:
     title: Extracurricular
-    sequence: 4
+    output: true
+    permalink: /extracurricular/:name/
